@@ -19,7 +19,10 @@ if ENVIRONMENT != "production":
 app = FastAPI(
     title="Mueblería Plaza Reforma API",
     description="API para gestión de muebles y publicaciones",
-    version="2.0"
+    version="2.0",
+    openapi_url="/api/openapi.json",
+    docs_url="/api/docs",
+    redoc_url="/api/redoc"
 )
 
 # ===== CORS =====
